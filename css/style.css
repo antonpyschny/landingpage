@@ -337,6 +337,7 @@ body {
 /*==============================*/
 .portfolio {
     padding-top: 110px;
+    padding-bottom: 110px;
 }
 
 .portfolio__container {}
@@ -350,6 +351,7 @@ body {
 .header-portfolio {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -379,6 +381,12 @@ body {
     border-radius: 5px;
 }
 
+@media (max-width: 767.98px) {
+    .header-portfolio__link {
+        width: 100%;
+    }
+}
+
 .header-portfolio__link:hover {
     background-color: #b9473a;
 }
@@ -393,7 +401,7 @@ body {
     margin-bottom: 35px;
 }
 
-.tabs-portfolio__butoon {
+.tabs-portfolio__button {
     font-size: 19px;
     line-height: 26px;
     cursor: pointer;
@@ -402,7 +410,7 @@ body {
     background-color: transparent;
 }
 
-.tabs-portfolio__butoon::after {
+.tabs-portfolio__button::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -413,32 +421,39 @@ body {
     background-color: #F85A47;
 }
 
-.tabs-portfolio__butoon:hover {
+.tabs-portfolio__button:hover {
     color: #F85A47;
 }
 
-.tabs-portfolio__butoon:hover::after {
+.tabs-portfolio__button:hover::after {
     width: 100%;
 }
 
-.tabs-portfolio__butoon.active {
+.tabs-portfolio__button.active {
     color: #F85A47;
 }
 
-.tabs-portfolio__butoon.active::after {
+.tabs-portfolio__button.active::after {
     width: 100%;
 }
 
 .tabs-portfolio__body {}
 
-.tabs-portfolio__item {}
+.tabs-portfolio__item {
+    display: none;
+}
+
+.tabs-portfolio__item.active {
+    display: block;
+}
 
 .item-tabs {}
+
 
 .item-tabs__items {
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
 .item-tabs__item {}
@@ -447,13 +462,157 @@ body {
     position: relative;
     display: block;
     padding-bottom: 81%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.item-tabs__img:hover img {
+    transform: scale(1.1);
 }
 
 .item-tabs__img img {
+    transition: transform 0.3s ease 0s;
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     object-fit: cover;
+}
+
+/*==============================*/
+.contact {}
+
+.contact__container {}
+
+.contact__title {
+    margin-bottom: 55px;
+}
+
+.contact__body {
+    background: #F1FFFF;
+    padding: 40px;
+    display: grid;
+    gap: 77px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 990.98px) {
+    .contact__body {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+
+.img-content {
+    display: grid;
+    justify-items: center;
+}
+
+.contant__img {}
+
+.img-content__item {
+    /*filter: drop-shadow(0px 163px 80px rgba(0, 0, 0, 0.04)) drop-shadow(0px 105.648px 46.8519px rgba(0, 0, 0, 0.0303704)) drop-shadow(0px 62.7852px 25.4815px rgba(0, 0, 0, 0.0242963)) drop-shadow(0px 32.6px 13px rgba(0, 0, 0, 0.02)) drop-shadow(0px 13.2815px 6.51852px rgba(0, 0, 0, 0.0157037)) drop-shadow(0px 3.01852px 3.14815px rgba(0, 0, 0, 0.00962963)) drop-shadow(48px 58px 44px rgba(0, 0, 0, 0.09));
+*/
+}
+
+.img-content__item img {
+    max-width: 100%;
+
+}
+
+
+.contant__content {}
+
+.content-info {}
+
+.content-info__title {
+    font-weight: 600;
+    font-size: 31px;
+    line-height: 42px;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 767.98px) {
+    .content-info__title {
+        font-size: 24px;
+    }
+}
+
+.content-info__options {
+    display: grid;
+    gap: 30px;
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 55px;
+}
+
+.options-content-featured {}
+
+.options-content-featured__item {
+    display: flex;
+    column-gap: 10px;
+}
+
+.options-content-featured__label {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 23px;
+    margin-bottom: 12px;
+}
+
+.options-content-featured__value {
+    font-size: 17px;
+
+}
+
+.fa-info {
+    margin-top: 15px;
+}
+
+.fa-solid {}
+
+.fa-phone {}
+
+.fa-location-dot {}
+
+.fa-envelope {}
+
+.socialmedia {}
+
+.content-info__social {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, 80px));
+
+    justify-items: center;
+}
+
+
+.socialmedia_item {}
+
+.fa-brands {}
+
+.fa-linkedin {}
+
+.fa-github {}
+
+.fa-figma {}
+
+.fa-instagram {}
+
+/*==============================*/
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__copy {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    grid-column: span 2;
+    text-align: center;
 }
