@@ -479,3 +479,142 @@ body {
     left: 0;
     object-fit: cover;
 }
+<<<<<<< HEAD
+
+/*==============================*/
+.contact {}
+
+.contact__container {}
+
+.contact__title {
+    margin-bottom: 55px;
+}
+
+.contact__body {
+    background: #F1FFFF;
+    padding: 40px;
+    display: grid;
+    gap: 77px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 990.98px) {
+    .contact__body {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+
+.img-content {
+    display: grid;
+    justify-items: center;
+}
+
+.contant__img {}
+
+.img-content__item {
+
+}
+
+.img-content__item img {
+    max-width: 100%;
+
+}
+
+
+.contant__content {}
+
+.content-info {}
+
+.content-info__title {
+    font-weight: 600;
+    font-size: 31px;
+    line-height: 42px;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 767.98px) {
+    .content-info__title {
+        font-size: 24px;
+    }
+}
+
+.content-info__options {
+    display: grid;
+    gap: 30px;
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 55px;
+}
+
+.options-content-featured {}
+
+.options-content-featured__item {
+    display: flex;
+    column-gap: 10px;
+}
+
+.options-content-featured__label {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 23px;
+    margin-bottom: 12px;
+}
+
+.options-content-featured__value {
+    font-size: 17px;
+
+}
+
+.fa-info {
+    margin-top: 15px;
+}
+
+.fa-solid {}
+
+.fa-phone {}
+
+.fa-location-dot {}
+
+.fa-envelope {}
+
+.socialmedia {}
+
+.content-info__social {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, 80px));
+
+    justify-items: center;
+}
+
+
+.socialmedia_item {}
+
+.fa-brands {}
+
+.fa-linkedin {}
+
+.fa-github {}
+
+.fa-figma {}
+
+.fa-instagram {}
+
+/*==============================*/
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__copy {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    grid-column: span 2;
+    text-align: center;
+}
+=======
+>>>>>>> 3fb66ebc35a9ba3a75f6f1c54a6718c486d796b0
