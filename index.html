@@ -16,25 +16,30 @@
         <header class="header">
             <div class="header__container">
                 <a href="index.html" class="header__logo">#developer</a>
-                <nav class="header__menu menu">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="" class="menu__link">Home</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="" class="menu__link">About</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#service" class="menu__link">Service</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#portfolio" class="menu__link">Portfolio</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#contact" class="menu__link">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="header__menu menu">
+                    <div class="menu__icon">
+                        <span></span>
+                    </div>
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__link">
+                                <a data-goto=".page__main" href="#" class="menu__link">Home</a>
+                            </li>
+                            <li class="menu__link">
+                                <a data-goto=".page__about" href="#" class="menu__link">About</a>
+                            </li>
+                            <li class="menu__link">
+                                <a data-goto=".page__service" href="#" class="menu__link">Service</a>
+                            </li>
+                            <li class="menu__link">
+                                <a data-goto=".page_portfolio" href="#" class="menu__link">Portfolio</a>
+                            </li>
+                            <li class="menu__link">
+                                <a data-goto=".page__contact" href="#" class="menu__link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
         <main class="page">
@@ -51,34 +56,39 @@
                         </div>
                         <div class="body-main-block__image">
                             <div class="image-main block">
-                                <img src="img/01.jpg" alt="">
+                                <img src="img/building-main.jpg" alt="">
                             </div>
                         </div>
                         <div>
                         </div>
             </section>
-            <section class="page__how how">
-                <div class="how__container">
-                    <h2 id="service" class="how__title title title_center">Service</h2>
-                    <div class="how__items">
-                        <div class="how__item item-how">
-                            <div class="item-how__icon"><img src="img/how/python.svg" alt=""></div>
-                            <div class="item-how__title">Python</div>
-                            <div class="item-how__text">Einführung in die Programmiersprache Python Grundlegende
+            <section class="page__about about">
+                <div class="about__container">
+                    <h2 class="about__title title title_center">About</h2>
+                </div>
+            </section>
+            <section class="page__service service">
+                <div class="service__container">
+                    <h2 id="service" class="service__title title title_center">Service</h2>
+                    <div class="service__items">
+                        <div class="service__item item-service">
+                            <div class="item-service__icon"><img src="img/service/python.svg" alt=""></div>
+                            <div class="item-service__title">Python</div>
+                            <div class="item-service__text">Einführung in die Programmiersprache Python Grundlegende
                                 Konzepte von Python
                                 Arbeiten mit Variablen</div>
                         </div>
-                        <div class="how__item item-how">
-                            <div class="item-how__icon"><img src="img/how/java.svg" alt=""></div>
-                            <div class="item-how__title">Java OCA</div>
-                            <div class="item-how__text">Java-Grundlagen
+                        <div class="service__item item-service">
+                            <div class="item-service__icon"><img src="img/service/java.svg" alt=""></div>
+                            <div class="item-service__title">Java OCA</div>
+                            <div class="item-service__text">Java-Grundlagen
                                 Arbeiten mit Java-Datentypen Verwendung von Operatoren und Entscheidungskonstruktionen
                             </div>
                         </div>
-                        <div class="how__item item-how">
-                            <div class="item-how__icon"><img src="img/how/htmlcss.svg" alt=""></div>
-                            <div class="item-how__title">CSS & HTML</div>
-                            <div class="item-how__text">HTML ist eine textbasierte Auszeichnungssprache,
+                        <div class="service__item item-service">
+                            <div class="item-service__icon"><img src="img/service/htmlcss.svg" alt=""></div>
+                            <div class="item-service__title">CSS & HTML</div>
+                            <div class="item-service__text">HTML ist eine textbasierte Auszeichnungssprache,
                                 mit der man die komplette Struktur einer Website vordefiniert.</div>
                         </div>
                     </div>
@@ -106,31 +116,17 @@
                                 <div class="item-tabs__items">
                                     <div class="item-tabs__item">
                                         <a href="" class="item-tabs__img">
-                                            <img src="img/portfolio.jpg" alt="Image">
+                                            <img src="img/portfolio/fog-green-lake.jpg" alt="Image">
                                         </a>
                                     </div>
                                     <div class="item-tabs__item">
                                         <a href="" class="item-tabs__img">
-                                            <img src="img/portfolio.jpg" alt="Image">
+                                            <img src="img/portfolio/building.jpg" alt="Image">
                                         </a>
                                     </div>
                                     <div class="item-tabs__item">
                                         <a href="" class="item-tabs__img">
-                                            <img src="img/portfolio.jpg" alt="Image">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tabs-portfolio__item item-tabs">
-                                <div class="item-tabs__items">
-                                    <div class="item-tabs__item">
-                                        <a href="" class="item-tabs__img">
-                                            <img src="img/portfolio.jpg" alt="Image">
-                                        </a>
-                                    </div>
-                                    <div class="item-tabs__item">
-                                        <a href="" class="item-tabs__img">
-                                            <img src="img/portfolio.jpg" alt="Image">
+                                            <img src="img/portfolio/forest.jpg" alt="Image">
                                         </a>
                                     </div>
                                 </div>
@@ -139,12 +135,51 @@
                                 <div class="item-tabs__items">
                                     <div class="item-tabs__item">
                                         <a href="" class="item-tabs__img">
-                                            <img src="img/portfolio.jpg" alt="Image">
+                                            <img src="img/portfolio/lake-fog.jpg" alt="Image">
                                         </a>
                                     </div>
                                     <div class="item-tabs__item">
                                         <a href="" class="item-tabs__img">
-                                            <img src="img/portfolio.jpg" alt="Image">
+                                            <img src="img/portfolio/forest.jpg" alt="Image">
+                                        </a>
+                                    </div>
+                                    <div class="item-tabs__item">
+                                        <a href="" class="item-tabs__img">
+                                            <img src="img/portfolio/fog-green-lake.jpg" alt="Image">
+                                        </a>
+                                    </div>
+                                    <div class="item-tabs__item">
+                                        <a href="" class="item-tabs__img">
+                                            <img src="img/portfolio/building.jpg" alt="Image">
+                                        </a>
+                                    </div>
+                                    <div class="item-tabs__item">
+                                        <a href="" class="item-tabs__img">
+                                            <img src="img/portfolio/lake-fog.jpg" alt="Image">
+                                        </a>
+                                    </div>
+                                    <div class="item-tabs__item">
+                                        <a href="" class="item-tabs__img">
+                                            <img src="img/portfolio/forest.jpg" alt="Image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs-portfolio__item item-tabs">
+                                <div class="item-tabs__items">
+                                    <div class="item-tabs__item">
+                                        <a href="" class="item-tabs__img">
+                                            <img src="img/portfolio/forest.jpg" alt="Image">
+                                        </a>
+                                    </div>
+                                    <div class="item-tabs__item">
+                                        <a href="" class="item-tabs__img">
+                                            <img src="img/portfolio/fog-green-lake.jpg" alt="Image">
+                                        </a>
+                                    </div>
+                                    <div class="item-tabs__item">
+                                        <a href="" class="item-tabs__img">
+                                            <img src="img/portfolio/lake-fog.jpg" alt="Image">
                                         </a>
                                     </div>
                                 </div>
@@ -159,13 +194,12 @@
                     <div class="contact__body">
                         <div class="contant__img img-content">
                             <div class="img-content__item">
-                                <img src="img/01.jpg" alt="Image">
+                                <img src="img/portfolio/keyboard.jpg" alt="Image">
                             </div>
                         </div>
                         <div class="contant__content content-info">
                             <h3 class="content-info__title">Ich freue mich auf Sie!</h3>
                             <div class="content-info__options options-content-featured">
-
                                 <div class="options-content-featured__item">
                                     <i class="fa-solid fa-phone fa-lg fa-info"></i>
                                     <div class="options-content-featured__items">
@@ -175,7 +209,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="options-content-featured__item">
                                     <i class="fa-solid fa-location-dot fa-lg fa-info"></i>
                                     <div class="options-content-featured__items">
@@ -184,7 +217,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="options-content-featured__item">
                                     <i class="fa-solid fa-envelope fa-lg fa-info"></i>
                                     <div class="options-content-featured__items">
@@ -211,7 +243,6 @@
                         </div>
                     </div>
                 </div>
-
             </section>
         </main>
         <footer class="footer">
