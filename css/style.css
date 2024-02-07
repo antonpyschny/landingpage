@@ -298,7 +298,7 @@ body._lock {
     padding-right: 80px;
 }
 
-.content-main-block__sub-title {
+.content-main-block__a-title {
     font-weight: 700;
     font-size: 22px;
     line-height: 29px;
@@ -391,8 +391,11 @@ body._lock {
 .tools-main-block__item img{
     max-height: 40px;
 }
-
-
+@media (max-width: 767.98px) {
+    .tools-main-block {
+        max-width: 80%;
+    }
+}
 /*==============================*/
 .page__about {}
 
