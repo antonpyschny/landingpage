@@ -36,7 +36,18 @@ if (menuLinks.length > 0) {
     }
 }
 /**------------------------------------------------------------------------- */
+document.addEventListener("DOMContentLoaded", function () {
+    var header = document.querySelector(".header");
 
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 0) {
+            header.classList.add("header--scrolled");
+        } else {
+            header.classList.remove("header--scrolled");
+        }
+    });
+});
+/**------------------------------------------------------------------------- */
 const tabNavItems = document.querySelectorAll('.tabs-portfolio__button');
 const tabItems = document.querySelectorAll('.item-tabs');
 document.addEventListener("click", function (e) {
